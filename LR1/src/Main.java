@@ -25,14 +25,12 @@ public class Main {
         System.out.print("Число Люка 1 з порядковим номером 2 є простим\n");
 
         while (n2.getSequence_number()<n){
-            temp.setValue(n2.getValue()); // temp = n2
-            temp.setSequence_number(n2.getSequence_number());
+            temp.set(n2);
 
             n2.setValue(n1.getValue()+n2.getValue()); // n2 = n1+n2;
             n2.setSequence_number(n2.getSequence_number()+1);
 
-            n1.setValue(temp.getValue());
-            n1.setSequence_number(temp.getSequence_number());
+            n1.set(temp);
             if (n2.is_prime())
                 System.out.printf("Число Люка %d з порядковим номером %d є простим\n", n2.getValue(), n2.getSequence_number());
         }

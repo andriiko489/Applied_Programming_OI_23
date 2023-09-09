@@ -31,4 +31,9 @@ public class Number {
         }
         return k==0;
     }
+
+    public void set(Number number){
+        this.value = number.getValue();
+        this.sequence_number = number.getSequence_number();
+    }
 }
