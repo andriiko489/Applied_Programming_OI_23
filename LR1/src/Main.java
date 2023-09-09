@@ -32,7 +32,7 @@ public class Main {
 
         System.out.print("Число Люка 1 з порядковим номером 2 є простим\n");
 
-        for (int i = 2; n2.getSequence_number()<n; i++){
+        while (n2.getSequence_number()<n){
             temp.setValue(n2.getValue()); // temp = n2
             temp.setSequence_number(n2.getSequence_number());
 
