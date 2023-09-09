@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * Check if num is simple
+     *
+     * @param n
+     * @return True if num is simple else return False
+     */
     public static boolean is_simple(int n){
         int k = 0;
         for (int i = 2; i<=n/2; i++){
