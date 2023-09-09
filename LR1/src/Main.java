@@ -9,7 +9,7 @@ public class Main {
 
         Number n2 = new Number();
         n2.setValue(1);
-        n2.setSequence_number(0);
+        n2.setSequence_number(1);
 
         Number temp = new Number();
 
@@ -22,7 +22,7 @@ public class Main {
             n = scan.nextInt();
         }
 
-        System.out.print("Число Люка 1 з порядковим номером 2 є простим\n");
+        System.out.print("Число Люка 1 з порядковим номером 1 є простим\n");
 
         while (n2.getSequence_number()<n){
             temp.set(n2);
