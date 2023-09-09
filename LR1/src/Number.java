@@ -17,4 +17,18 @@ public class Number {
     public void setValue(int value) {
         this.value = value;
     }
+    /**
+     * Check if num is prime
+     *
+     * @return True if num is prime else return False
+     */
+    public boolean is_prime(){
+        int n = this.value;
+        int k = 0;
+        for (int i = 2; i<=n/2; i++){
+            if (n%i==0)
+                k++;
+        }
+        return k==0;
+    }
 }

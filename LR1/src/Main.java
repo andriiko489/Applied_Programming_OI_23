@@ -1,20 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-    /**
-     * Check if num is prime
-     *
-     * @param n
-     * @return True if num is prime else return False
-     */
-    public static boolean is_prime(int n){
-        int k = 0;
-        for (int i = 2; i<=n/2; i++){
-            if (n%i==0)
-                k++;
-        }
-        return k==0;
-    }
     public static void main(String[] args) {
         int n;
         Number n1 = new Number();
@@ -47,7 +33,7 @@ public class Main {
 
             n1.setValue(temp.getValue());
             n1.setSequence_number(temp.getSequence_number());
-            if (is_prime(n2.getValue()))
+            if (n2.is_prime())
                 System.out.printf("Число Люка %d з порядковим номером %d є простим\n", n2.getValue(), n2.getSequence_number());
         }
     }
