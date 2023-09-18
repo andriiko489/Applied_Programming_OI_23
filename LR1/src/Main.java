@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
+/**
+ * Just main class
+ */
 public class Main {
+    /**
+     * main function
+     *
+     * @param args command line args
+     */
     public static void main(String[] args) {
         int n;
         Number n1 = new Number();
