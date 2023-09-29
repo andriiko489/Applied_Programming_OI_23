@@ -64,4 +64,9 @@ public class Number {
         this.value = number.getValue();
         this.sequence_number = number.getSequence_number();
     }
+
+    @Override
+    public String toString() {
+        return "Число №" + sequence_number + " з значенням " + value;
+    }
 }
