@@ -1,5 +1,4 @@
 public class LucasSequence {
-    private int n;
     private Number[] numbers;
     public LucasSequence(int n){
         this.numbers = new Number[n];
