@@ -1,7 +1,9 @@
+import java.util.Scanner;
+
 public class Phone {
     int id;
-    String last_name;
     String first_name;
+    String last_name;
     int phone_number;
     float city_call_time;
     float intercity_call_time;
@@ -52,5 +54,27 @@ public class Phone {
 
     public void setIntercity_call_time(float intercity_call_time) {
         this.intercity_call_time = intercity_call_time;
+    }
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "id=" + id +
+                ", first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", phone_number=" + phone_number +
+                ", city_call_time=" + city_call_time +
+                ", intercity_call_time=" + intercity_call_time +
+                '}';
+    }
+
+    public void read() {
+        Scanner scanner = new Scanner(System.in);
+        id = scanner.nextInt();
+        first_name = scanner.next();
+        last_name = scanner.next();
+        phone_number = scanner.nextInt();
+        city_call_time = scanner.nextFloat();
+        intercity_call_time = scanner.nextFloat();
     }
 }
