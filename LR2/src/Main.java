@@ -8,10 +8,10 @@ public class Main {
         n = scanner.nextInt();
         Phones phones = new Phones();
         phones.read(n);
+
         System.out.print("Введіть мінімальний час міських розмов: ");
         int min_time;
         min_time = scanner.nextInt();
-
         System.out.printf("Аюоненти з часом міських розмов більшим за %d:\n", min_time);
         phones.city_call_calling_more_than(min_time);
 
@@ -26,3 +26,7 @@ public class Main {
         phones.numbers_in_range(min_number, max_number);
     }
 }
+//
+// 1 андрій грималюк 222 222 222
+// 2 авпва вапв 333 333 333
+// 3 пвапвп вап 444 444 444

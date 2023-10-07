@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class Phone {
-    int id;
-    String first_name;
-    String last_name;
-    int phone_number;
-    float city_call_time;
-    float intercity_call_time;
+    private int id;
+    private String first_name;
+    private String last_name;
+    private long phone_number;
+    private float city_call_time;
+    private float intercity_call_time;
 
     public int getId() {
         return id;
@@ -20,7 +20,7 @@ public class Phone {
         return first_name;
     }
 
-    public int getPhone_number() {
+    public long getPhone_number() {
         return phone_number;
     }
 
